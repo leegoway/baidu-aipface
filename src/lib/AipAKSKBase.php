@@ -2,15 +2,13 @@
 
 namespace leegoway\aipface\lib;
 
-require_once 'AipBCEUtil.php';
-
 use leegoway\aipface\lib\sign\SampleSigner;
 use leegoway\aipface\lib\sign\SignOption;
 
 /**
  * Aip Base 基类
  */
-class AipsAKSKBase {
+class AipAKSKBase {
 
     /**
      * apiKey

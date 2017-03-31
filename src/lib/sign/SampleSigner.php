@@ -13,17 +13,12 @@ class SampleSigner
     //   3.content-length
     //   4.content-type
     //   5.all the headers begin with x-bce-
-    public static $defaultHeadersToSign;
-
-    public static function  __init()
-    {
-        SampleSigner::$defaultHeadersToSign = array(
-            "host",
-            "content-length",
-            "content-type",
-            "content-md5",
-        );
-    }
+    public static $defaultHeadersToSign = array(
+        "host",
+        "content-length",
+        "content-type",
+        "content-md5",
+    );
 
     //
     // 1、$credentials数组要包含ak和sk字段
@@ -127,4 +122,3 @@ class SampleSigner
         return substr_compare($header, SampleSigner::BCE_PREFIX, 0, strlen(SampleSigner::BCE_PREFIX)) == 0;
     }
 }
-SampleSigner::__init();
