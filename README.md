@@ -35,3 +35,26 @@ $ php composer.phar require leegoway/yii2-uic "dev-master"
     }
 ];
 ```
+
+## 方法列表
+目前支持的方法列表如下，如有问题欢迎提issue
+
+
+1、public function AddUser($uid, $images, $userInfo, $group = 'elong')
+
+2、public function UpdateUser($uid, $images)
+
+3、public function GetUser($uid, $group = 'elong')
+
+4、public function DeleteUser($uid)
+
+5、public function VerifyUser($uid, $images, $group = 'elong')
+
+6、public function IdentifyUser($image, $group = 'elong')
+
+7、public function IdentifyUsers($images)
+
+8、public function GetGroup($start = 0, $num = 1)
+
+9、public function GetGroupUsers($groupId)
+
